@@ -29,6 +29,7 @@ module HazardUnit(
     input logic PC_SRC,
     input logic DMEM_READ_EXEC,
     input logic [4:0] RD_MEM,
+    input logic REG_WRITE_EXEC,
     input logic REG_WRITE_MEM,
     input logic [4:0] RD_WB,
     input logic REG_WRITE_WB,
@@ -48,7 +49,7 @@ module HazardUnit(
         FORWARD_A = 2'b00;
         FORWARD_B = 2'b00;
         
-        if ((RS1_DEC == RD_EXEC) && (RS1_DEC != 32'h00000000)) begin
+        if (REG_WRITE_EXEC && (RS1_DEC == RD_EXEC) && (RS1_DEC != 32'h00000000)) begin
             FORWARD_A = 2'b10;
             if (DMEM_READ_EXEC) begin
                 STALL_FET = 1'b1;
@@ -56,11 +57,11 @@ module HazardUnit(
             end
         end
         
-        else if ((RS1_DEC == RD_MEM) && (RS1_DEC != 32'h00000000)) begin
+        else if (REG_WRITE_MEM && (RS1_DEC == RD_MEM) && (RS1_DEC != 32'h00000000)) begin
             FORWARD_A = 2'b01;
         end
         
-        if ((RS2_DEC == RD_EXEC) && (RS2_DEC != 32'h00000000)) begin
+        if (REG_WRITE_EXEC && (RS2_DEC == RD_EXEC) && (RS2_DEC != 32'h00000000)) begin
             FORWARD_B = 2'b10;
             if (DMEM_READ_EXEC) begin
                 STALL_FET = 1'b1;
@@ -68,7 +69,7 @@ module HazardUnit(
             end
         end
         
-        else if ((RS2_DEC == RD_MEM) && (RS2_DEC != 32'h00000000)) begin
+        else if (REG_WRITE_MEM && (RS2_DEC == RD_MEM) && (RS2_DEC != 32'h00000000)) begin
             FORWARD_B = 2'b01;
         end
         

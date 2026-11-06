@@ -1,0 +1,359 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="4400" height="2350" viewBox="0 0 4400 2350">
+  <defs>
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L8 3 L0 6 z" fill="#24303F"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L8 3 L0 6 z" fill="#255EB0"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="4400" height="2350" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
+  <rect x="35" y="305" width="590" height="1400" rx="14" fill="#FAFBFC" stroke="#E4EBF3" stroke-width="1.5"/>
+  <rect x="702" y="305" width="800" height="1400" rx="14" fill="#FAFBFC" stroke="#E4EBF3" stroke-width="1.5"/>
+  <rect x="1594" y="305" width="1110" height="1400" rx="14" fill="#FAFBFC" stroke="#E4EBF3" stroke-width="1.5"/>
+  <rect x="2775" y="305" width="690" height="1400" rx="14" fill="#FAFBFC" stroke="#E4EBF3" stroke-width="1.5"/>
+  <rect x="3530" y="305" width="840" height="1400" rx="14" fill="#FAFBFC" stroke="#E4EBF3" stroke-width="1.5"/>
+  <rect x="45" y="35" width="4310" height="136" rx="22" fill="#F2AD00" stroke="#F2AD00" stroke-width="0"/>
+  <text x="115" y="124" font-size="75" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#FFFFFF" text-anchor="start">OTTER  •  Five-Stage Pipelined RISC-V Datapath</text>
+  <text x="330" y="232" font-size="52" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">IF</text>
+  <text x="330" y="280" font-size="27" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">Instruction Fetch</text>
+  <text x="1100" y="232" font-size="52" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">ID</text>
+  <text x="1100" y="280" font-size="27" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">Instruction Decode</text>
+  <text x="2140" y="232" font-size="52" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">EX</text>
+  <text x="2140" y="280" font-size="27" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">Execute</text>
+  <text x="3100" y="232" font-size="52" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">MEM</text>
+  <text x="3100" y="280" font-size="27" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">Memory</text>
+  <text x="3920" y="232" font-size="52" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">WB</text>
+  <text x="3920" y="280" font-size="27" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">Write Back</text>
+  <path d="M 625 305 L 625 1704" fill="none" stroke="#C8D1DF" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 12"/>
+  <path d="M 1515 305 L 1515 1704" fill="none" stroke="#C8D1DF" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 12"/>
+  <path d="M 2705 305 L 2705 1704" fill="none" stroke="#C8D1DF" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 12"/>
+  <path d="M 3455 305 L 3455 1704" fill="none" stroke="#C8D1DF" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 12"/>
+  <g id="datapath-connections">
+    <path d="M 189 885 L 255 885" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 400 899 L 435 899 L 435 1207 L 430 1207" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 400 873 L 466 873 L 466 605" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 400 915 L 520 915 L 520 735 L 630 735" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 590 560 L 611 560 L 611 805 L 630 805" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 590 564 L 599 564 L 599 744 L 120 744 L 120 825" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 610 1208 L 623 1208 L 623 1125 L 630 1125" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 705 690 L 750 690 L 750 850 L 1522 850" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 705 810 L 1460 810 L 1460 776 L 1522 776" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 705 1125 L 756 1125 L 756 1070" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M 756 1070 L 858 1070" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="756" cy="1070" r="5" fill="#24303F"/>
+    <path d="M 816 603 L 780 603 L 780 1050 L 756 1050" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 858 1070 L 885 1070 L 885 1020 L 906 1020" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 885 1070 L 885 1143 L 906 1143" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 756 1070 L 798 1070 L 798 1431 L 971 1431" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 756 1070 L 1472 1070 L 1472 1490 L 1522 1490" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1191 1060 L 1280 1060 L 1280 1015 L 1522 1015" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1191 1180 L 1340 1180 L 1522 1180" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1231 1438 L 1410 1438 L 1410 1365 L 1522 1365" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1597 1015 L 1644 1015 L 1644 872 L 1705 872" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1597 1180 L 1668 1180 L 1668 1290 L 1705 1290" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1825 894 L 1890 894 L 1890 911 L 1930 911" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1825 894 L 1868 894 L 1868 560 L 2163 560" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1597 848 L 1640 848 L 1640 756 L 1900 756 L 1900 956 L 1930 956" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1825 1315 L 1902 1315 L 1902 1248 L 1930 1248" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1597 1365 L 1885 1365 L 1885 1292 L 1930 1292" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1825 1315 L 1870 1315 L 1870 1530 L 2600 1530 L 2600 1300 L 2710 1300" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1597 848 L 2020 848 L 2020 616 L 2163 616" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1597 1365 L 2100 1365 L 2100 651 L 2163 651" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2038 927 L 2110 927 L 2110 1035 L 2188 1035" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2038 1265 L 2143 1265 L 2143 1150 L 2188 1150" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2405 1097 L 2515 1097 L 2515 1050 L 2710 1050" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2405 1040 L 2436 1040 L 2436 826 L 2450 826" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1597 776 L 2125 776 L 2125 720 L 2680 720 L 2680 788 L 2710 788" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1597 1490 L 1613 1490 L 1613 1515 L 2682 1515 L 2682 970 L 2710 970" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2785 788 L 3460 788" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2785 970 L 2900 970 L 2900 930 L 3400 930 L 3400 972 L 3460 972" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2785 1050 L 2888 1050 L 2888 1065 L 2935 1065" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2785 1300 L 2890 1300 L 2890 1192 L 2935 1192" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2785 1050 L 2810 1050 L 2810 875 L 3374 875 L 3374 1068 L 3460 1068" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 3185 1130 L 3350 1130 L 3350 1270 L 3460 1270" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 3535 1068 L 3598 1068 L 3598 1037 L 3720 1037" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 3535 1270 L 3620 1270 L 3620 1102 L 3720 1102" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 3535 788 L 3650 788 L 3650 1175 L 3720 1175" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 3655 1244 L 3720 1244" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 3850 1135 L 3950 1135 L 3950 1107 L 4020 1107" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 4234 1107 L 4285 1107 L 4285 1730 L 1140 1730 L 1140 1240" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 3535 972 L 3610 972 L 3610 1665 L 974 1665 L 974 1225" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 4285 1680 L 1794 1680 L 1794 1450 L 1685 1450 L 1685 1355 L 1705 1355" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1685 1450 L 1660 1450 L 1660 927 L 1705 927" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2810 1050 L 2825 1050 L 2825 1600 L 1640 1600 L 1640 1340 L 1705 1340" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 1640 1600 L 1625 1600 L 1625 951 L 1705 951" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2888 1050 L 2888 1465 L 2970 1465" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+    <path d="M 2423 585 L 2450 585 L 2450 424 L 175 424 L 175 845" fill="none" stroke="#24303F" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+  </g>
+  <g id="control-connections">
+    <path d="M 3535 680 L 4310 680 L 4310 1770 L 1070 1770 L 1070 1225" fill="none" stroke="#255EB0" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1107 626 L 1290 626 L 1290 680 L 1522 680" fill="none" stroke="#255EB0" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1090 710 L 1120 710 L 1120 1360" fill="none" stroke="#255EB0" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1597 680 L 1850 680 L 1850 742 L 2418 742" fill="none" stroke="#255EB0" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1860 680 L 1860 1004 L 1984 1004 L 1984 987" fill="none" stroke="#255EB0" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1850 742 L 2050 742 L 2050 1362 L 1984 1362 L 1984 1328" fill="none" stroke="#255EB0" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 2420 742 L 2420 1260 L 2290 1260 L 2290 1214" fill="none" stroke="#255EB0" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1597 680 L 2140 680 L 2140 580 L 2163 580" fill="none" stroke="#255EB0" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1597 680 L 2600 680 L 2710 680" fill="none" stroke="#255EB0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 2785 680 L 2860 680 L 2860 1012 L 2935 1012" fill="none" stroke="#255EB0" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 2785 680 L 3460 680" fill="none" stroke="#255EB0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 3535 680 L 3668 680 L 3668 1328 L 3785 1328 L 3785 1275" fill="none" stroke="#255EB0" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 2660 811 L 2675 811 L 2675 358 L 135 358 L 135 811" fill="none" stroke="#255EB0" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1597 680 L 2470 680 L 2470 760" fill="none" stroke="#255EB0" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 735 1125 L 735 1860 L 575 1860 L 575 1912" fill="none" stroke="#255EB0" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1618 1490 L 1618 1855 L 1470 1855 L 1470 1912" fill="none" stroke="#255EB0" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 2785 970 L 2810 970 L 2810 1840 L 2440 1840 L 2440 1912" fill="none" stroke="#255EB0" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 3535 972 L 3585 972 L 3585 1820 L 3220 1820 L 3220 1912" fill="none" stroke="#255EB0" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 2665 811 L 2688 811 L 2688 1795 L 3830 1795 L 3830 1912" fill="none" stroke="#255EB0" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 475 1912 L 475 1850 L 220 1850 L 220 940 L 255 940" fill="none" stroke="#255EB0" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 760 1912 L 760 1840 L 720 1840 L 720 1515 L 705 1515" fill="none" stroke="#255EB0" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 950 1912 L 950 1828 L 610 1828 L 610 1500 L 630 1500" fill="none" stroke="#255EB0" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1310 1912 L 1310 1800 L 1506 1800 L 1506 1510 L 1522 1510" fill="none" stroke="#255EB0" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1830 1912 L 1830 1788 L 1495 1788 L 1495 718 L 1522 718" fill="none" stroke="#255EB0" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1597 718 L 1672 718 L 1672 993 L 1760 993 L 1760 980" fill="none" stroke="#255EB0" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M 1597 718 L 1680 718 L 1680 1452 L 1765 1452 L 1765 1400" fill="none" stroke="#255EB0" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+  </g>
+  <g id="function-blocks">
+    <rect x="630" y="595" width="75" height="1000" rx="5" fill="#E8F0FD" stroke="#255EB0" stroke-width="3.2"/>
+    <rect x="1522" y="595" width="75" height="1000" rx="5" fill="#E8F0FD" stroke="#255EB0" stroke-width="3.2"/>
+    <rect x="2710" y="595" width="75" height="1000" rx="5" fill="#E8F0FD" stroke="#255EB0" stroke-width="3.2"/>
+    <rect x="3460" y="595" width="75" height="1000" rx="5" fill="#E8F0FD" stroke="#255EB0" stroke-width="3.2"/>
+    <rect x="255" y="850" width="145" height="116" rx="7" fill="#EDF3FC" stroke="#24303F" stroke-width="3.3"/>
+    <rect x="438" y="515" width="152" height="93" rx="7" fill="#F6F8FC" stroke="#24303F" stroke-width="3.3"/>
+    <rect x="430" y="1110" width="180" height="190" rx="7" fill="#F6F8FC" stroke="#24303F" stroke-width="3.3"/>
+    <polygon points="84 811 189 830 189 942 84 961 84 811" stroke="#24303F" fill="#FCFCFD" stroke-width="3.3"/>
+    <rect x="817" y="490" width="290" height="230" rx="7" fill="#F6F8FC" stroke="#24303F" stroke-width="3.3"/>
+    <rect x="906" y="980" width="285" height="260" rx="7" fill="#EDF3FC" stroke="#24303F" stroke-width="3.3"/>
+    <rect x="971" y="1360" width="260" height="151" rx="7" fill="#F6F8FC" stroke="#24303F" stroke-width="3.3"/>
+    <polygon points="1705 824 1825 843 1825 960 1705 979 1705 824" stroke="#24303F" fill="#EDF3FC" stroke-width="3.3"/>
+    <polygon points="1705 1245 1825 1264 1825 1381 1705 1400 1705 1245" stroke="#24303F" fill="#EDF3FC" stroke-width="3.3"/>
+    <polygon points="1930 870 2038 889 2038 967 1930 986 1930 870" stroke="#24303F" fill="#EDF3FC" stroke-width="3.3"/>
+    <polygon points="1930 1207 2038 1226 2038 1308 1930 1327 1930 1207" stroke="#24303F" fill="#EDF3FC" stroke-width="3.3"/>
+    <polygon points="2188 968 2405 1013 2405 1175 2188 1220 2188 1135 2250 1095 2188 1055" stroke="#24303F" stroke-width="4" fill="#FFFFFF"/>
+    <rect x="2163" y="528" width="260" height="142" rx="7" fill="#F6F8FC" stroke="#24303F" stroke-width="3.3"/>
+    <rect x="2450" y="760" width="210" height="128" rx="7" fill="#F6F8FC" stroke="#24303F" stroke-width="3.3"/>
+    <rect x="2935" y="967" width="250" height="288" rx="7" fill="#F6F8FC" stroke="#24303F" stroke-width="3.3"/>
+    <polygon points="3720 1000 3850 1019 3850 1256 3720 1275 3720 1000" stroke="#24303F" fill="#EDF3FC" stroke-width="3.3"/>
+    <rect x="4020" y="1049" width="214" height="116" rx="7" fill="#EDF3FC" stroke="#24303F" stroke-width="3.3"/>
+    <rect x="360" y="1912" width="3700" height="300" rx="22" fill="#EAF2FF" stroke="#255EB0" stroke-width="3.5"/>
+    <rect x="2810" y="1390" width="545" height="215" rx="9" fill="#FFF4D6" stroke="#D7AB51" stroke-width="2"/>
+  </g>
+  <g id="component-labels">
+    <rect x="630" y="595" width="75" height="54" rx="4" fill="#C9DBF7" stroke="#255EB0" stroke-width="0"/>
+    <text x="667" y="628" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#255EB0" text-anchor="middle">IF/ID</text>
+    <text x="668" y="1573" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#255EB0" text-anchor="middle">CLK ↑</text>
+    <path d="M 638 690 L 696 690" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="667" y="681" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">PC</text>
+    <path d="M 638 810 L 696 810" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="667" y="801" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">PC+4</text>
+    <path d="M 638 1125 L 696 1125" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="667" y="1116" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">instr</text>
+    <rect x="1522" y="595" width="75" height="54" rx="4" fill="#C9DBF7" stroke="#255EB0" stroke-width="0"/>
+    <text x="1559" y="628" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#255EB0" text-anchor="middle">ID/EX</text>
+    <text x="1560" y="1573" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#255EB0" text-anchor="middle">CLK ↑</text>
+    <path d="M 1530 688 L 1588 688" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="1559" y="679" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">ctrl</text>
+    <path d="M 1530 776 L 1588 776" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="1559" y="767" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">pc_4</text>
+    <path d="M 1530 848 L 1588 848" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="1559" y="839" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">pc</text>
+    <path d="M 1530 1015 L 1588 1015" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="1559" y="1006" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">rd1</text>
+    <path d="M 1530 1180 L 1588 1180" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="1559" y="1171" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">rd2</text>
+    <path d="M 1530 1365 L 1588 1365" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="1559" y="1356" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">imm</text>
+    <path d="M 1530 1490 L 1588 1490" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="1559" y="1481" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">rs/rd</text>
+    <rect x="2710" y="595" width="75" height="54" rx="4" fill="#C9DBF7" stroke="#255EB0" stroke-width="0"/>
+    <text x="2747" y="628" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#255EB0" text-anchor="middle">EX/MEM</text>
+    <text x="2748" y="1573" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#255EB0" text-anchor="middle">CLK ↑</text>
+    <path d="M 2718 688 L 2776 688" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="2747" y="679" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">ctrl</text>
+    <path d="M 2718 788 L 2776 788" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="2747" y="779" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">pc_4</text>
+    <path d="M 2718 970 L 2776 970" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="2747" y="961" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">rd</text>
+    <path d="M 2718 1050 L 2776 1050" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="2747" y="1041" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">ALU</text>
+    <path d="M 2718 1300 L 2776 1300" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="2747" y="1291" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">store</text>
+    <rect x="3460" y="595" width="75" height="54" rx="4" fill="#C9DBF7" stroke="#255EB0" stroke-width="0"/>
+    <text x="3497" y="628" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#255EB0" text-anchor="middle">MEM/WB</text>
+    <text x="3498" y="1573" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#255EB0" text-anchor="middle">CLK ↑</text>
+    <path d="M 3468 688 L 3526 688" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="3497" y="679" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">ctrl</text>
+    <path d="M 3468 788 L 3526 788" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="3497" y="779" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">pc_4</text>
+    <path d="M 3468 972 L 3526 972" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="3497" y="963" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">rd</text>
+    <path d="M 3468 1068 L 3526 1068" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="3497" y="1059" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">ALU</text>
+    <path d="M 3468 1270 L 3526 1270" fill="none" stroke="#8EA4BB" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="3497" y="1261" font-size="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">load</text>
+    <text x="327.5" y="918.385" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">PC</text>
+    <text x="327.5" y="950" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">PC_WRITE</text>
+    <text x="514.0" y="571.885" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">+4</text>
+    <text x="520.0" y="1199.0" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Instruction</text>
+    <text x="520.0" y="1231.77" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Memory</text>
+    <text x="520.0" y="1284" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">IMEM</text>
+    <text x="136.5" y="883.0" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">PC MUX</text>
+    <text x="93" y="844" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">0</text>
+    <text x="93" y="870" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">1</text>
+    <text x="136.5" y="991" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="middle">pc_src</text>
+    <text x="962.0" y="599.0" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Control</text>
+    <text x="962.0" y="631.77" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Decoder</text>
+    <text x="962.0" y="704" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">CU_DCDR</text>
+    <text x="1048.5" y="1104.0" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Register</text>
+    <text x="1048.5" y="1136.77" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">File</text>
+    <text x="1048.5" y="1224" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">2 read / 1 write</text>
+    <text x="1101.0" y="1429.5" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Immediate</text>
+    <text x="1101.0" y="1462.27" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Generator</text>
+    <text x="1101.0" y="1495" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">IMM_SEL</text>
+    <text x="1765.0" y="898.5" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">FWD A</text>
+    <text x="1714" y="857" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">0  rd1</text>
+    <text x="1714" y="883" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">1  WB</text>
+    <text x="1714" y="909" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">2  MEM</text>
+    <text x="1765.0" y="1009" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="middle">forward_a</text>
+    <text x="1765.0" y="1319.5" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">FWD B</text>
+    <text x="1714" y="1278" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">0  rd2</text>
+    <text x="1714" y="1304" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">1  WB</text>
+    <text x="1714" y="1330" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">2  MEM</text>
+    <text x="1765.0" y="1430" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="middle">forward_b</text>
+    <text x="1984.0" y="925.0" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">ALU A</text>
+    <text x="1939" y="903" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">0</text>
+    <text x="1939" y="929" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">1</text>
+    <text x="1984.0" y="1016" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="middle">alu_srca</text>
+    <text x="1984.0" y="1264.0" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">ALU B</text>
+    <text x="1939" y="1240" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">0</text>
+    <text x="1939" y="1266" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">1</text>
+    <text x="1984.0" y="1357" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="middle">alu_srcb</text>
+    <text x="2322" y="1103" font-size="45" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">ALU</text>
+    <text x="2304" y="1164" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="middle">alu_ctrl</text>
+    <text x="2293.0" y="593.0" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Target</text>
+    <text x="2293.0" y="625.77" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Generator</text>
+    <text x="2293.0" y="654" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">PC/RS1 + imm</text>
+    <text x="2555.0" y="818.0" font-size="27" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Branch</text>
+    <text x="2555.0" y="848.51" font-size="27" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Decision</text>
+    <text x="2555.0" y="872" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">jump | branch test</text>
+    <text x="3060.0" y="1105.0" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Data</text>
+    <text x="3060.0" y="1137.77" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Memory</text>
+    <text x="3060.0" y="1239" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">DMEM</text>
+    <text x="3785.0" y="1134.5" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">WB MUX</text>
+    <text x="3729" y="1033" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">0 ALU</text>
+    <text x="3729" y="1059" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">1 MEM</text>
+    <text x="3729" y="1085" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">2 PC+4</text>
+    <text x="3729" y="1111" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">3 zero</text>
+    <text x="3785.0" y="1305" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="middle">reg_src_ctrl</text>
+    <text x="4127.0" y="1117.385" font-size="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="middle">Result</text>
+    <text x="4127.0" y="1149" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="middle">pwb.result</text>
+    <text x="490" y="1972" font-size="40" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#255EB0" text-anchor="start">HAZARD DETECTION + FORWARDING</text>
+    <text x="490" y="2014" font-size="23" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">HazardUnit.sv: RAW comparisons, load-use stall, taken-control-transfer flush</text>
+    <text x="490" y="2065" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="start">Inputs:</text>
+    <text x="590" y="2065" font-size="23" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">rs1D / rs2D     rdE / regWriteE / loadE     rdM / regWriteM     pc_src</text>
+    <text x="490" y="2119" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#24303F" text-anchor="start">Outputs:</text>
+    <text x="615" y="2119" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">stall_fet   stall_dec   flush_dec   flush_exec   forward_a[1:0]   forward_b[1:0]</text>
+    <text x="490" y="2170" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">Port list also contains rs1E, rs2E, rdW, regWriteW (unused by current hazard logic).</text>
+    <text x="2834" y="1430" font-size="23" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">IOBUS_ADDR  ←  pmem.alu_result</text>
+    <text x="2834" y="1473" font-size="23" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">IOBUS_OUT  ←  pmem.rs2</text>
+    <text x="2834" y="1515" font-size="23" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#A24B31" text-anchor="start">IOBUS_WR   unassigned in top RTL</text>
+    <text x="2834" y="1560" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#A24B31" text-anchor="start">pmem.rs2 is never populated.</text>
+  </g>
+  <g id="signal-labels">
+    <rect x="200" y="860" width="63.2" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="205" y="876" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">pc_in</text>
+    <rect x="403" y="831" width="84.48" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="408" y="847" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">pfet.pc</text>
+    <rect x="447" y="480" width="52.56" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="452" y="496" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">pc_4</text>
+    <rect x="514" y="1144" width="73.84" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="519" y="1160" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">IMEM_A</text>
+    <rect x="576" y="1096" width="63.2" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="581" y="1112" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">instr</text>
+    <rect x="705" y="642" width="52.56" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="710" y="658" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">pdec</text>
+    <rect x="750" y="808" width="52.56" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="755" y="824" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">pc_4</text>
+    <rect x="772" y="1004" width="127.04" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="777" y="1020" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">instr[31:0]</text>
+    <rect x="881" y="984" width="127.04" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="886" y="1000" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">rs1 [19:15]</text>
+    <rect x="880" y="1152" width="127.04" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="885" y="1168" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">rs2 [24:20]</text>
+    <rect x="1135" y="1018" width="41.92" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1140" y="1034" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">rd1</text>
+    <rect x="1155" y="1149" width="41.92" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1160" y="1165" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">rd2</text>
+    <rect x="1250" y="1399" width="84.48" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1255" y="1415" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">imm_ext</text>
+    <rect x="1590" y="1485" width="158.96" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1595" y="1501" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">rs1 / rs2 / rd</text>
+    <rect x="1835" y="850" width="148.32000000000002" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1840" y="866" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">forward_a_out</text>
+    <rect x="1840" y="1284" width="116.4" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1845" y="1300" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">write_data</text>
+    <rect x="1985" y="858" width="105.76" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1990" y="874" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">alu_src_a</text>
+    <rect x="2013" y="1183" width="105.76" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2018" y="1199" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">alu_src_b</text>
+    <rect x="2411" y="1067" width="116.4" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2416" y="1083" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">alu_result</text>
+    <rect x="2223" y="491" width="105.76" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2228" y="507" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">pc_target</text>
+    <rect x="2415" y="976" width="116.4" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2420" y="992" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">branch_out</text>
+    <rect x="2887" y="1035" width="52.56" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2892" y="1051" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">addr</text>
+    <rect x="2863" y="1275" width="116.4" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2868" y="1291" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">store data</text>
+    <rect x="3184" y="1100" width="95.12" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="3189" y="1116" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">mem_data</text>
+    <rect x="3590" y="1015" width="41.92" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="3595" y="1031" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">ALU</text>
+    <rect x="3602" y="1247" width="41.92" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="3607" y="1263" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">MEM</text>
+    <rect x="3655" y="1164" width="52.56" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="3660" y="1180" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">PC+4</text>
+    <rect x="3865" y="1088" width="73.84" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="3870" y="1104" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">result</text>
+    <rect x="2940" y="1440" width="116.4" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2945" y="1456" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">IOBUS_ADDR</text>
+    <rect x="188" y="729" width="70.48" height="23" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="193" y="744" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">PC + 4</text>
+    <rect x="128" y="327" width="70.48" height="23" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="133" y="342" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">pc_src</text>
+    <rect x="2510" y="723" width="70.48" height="23" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2515" y="738" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">pc_src</text>
+    <rect x="1211" y="602" width="161.20000000000002" height="23" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1216" y="617" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">decode controls</text>
+    <rect x="1275" y="653" width="584.5600000000001" height="23" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1280" y="668" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">reg_write / mem_write / jump / branch / ALU ctrl / WB sel</text>
+    <rect x="2925" y="676" width="151.12" height="23" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2930" y="691" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">control to MEM</text>
+    <rect x="3672" y="686" width="100.72000000000001" height="23" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="3677" y="701" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">WB select</text>
+    <rect x="195" y="954" width="233.44000000000003" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="200" y="970" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">PC_WRITE = ~stall_fet</text>
+    <rect x="615" y="1745" width="256.40000000000003" height="25" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="620" y="1762" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">stall / flush feedback</text>
+    <rect x="1655" y="1641" width="222.8" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1660" y="1657" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">MEM / WB bypass data</text>
+    <rect x="1655" y="1564" width="276.0" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1660" y="1580" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">EX/MEM bypass: alu_result</text>
+    <rect x="991" y="1635" width="265.36" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="996" y="1651" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">WB rd → RF write address</text>
+    <rect x="1125" y="1742" width="265.36" height="24" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="1130" y="1758" font-size="19" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">WB reg_write → RF enable</text>
+    <rect x="2545" y="308" width="480.40000000000003" height="26" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2550" y="326" font-size="21" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#255EB0" text-anchor="start">taken branch / jump redirects PC from EX</text>
+    <rect x="2825" y="1339" width="383.52000000000004" height="28" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2830" y="1359" font-size="23" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">IOBUS / memory-mapped signals</text>
+    <rect x="2354" y="893" width="544.24" height="23" rx="3" fill="#FFFFFF" opacity=".94"/>
+    <text x="2359" y="908" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#24303F" text-anchor="start">pc_src = jump | (branch &amp; (branch_ctrl ^ branch_out))</text>
+  </g>
+  <rect x="55" y="2237" width="4290" height="80" rx="9" fill="#F5F7FA" stroke="#E1E6ED" stroke-width="1.5"/>
+  <text x="95" y="2288" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="start">Black = datapath  •  Blue = control  •  Pale columns = pipeline registers  •  Register bundles are grouped for readability</text>
+  <text x="4370" y="2294" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="normal" fill="#607085" text-anchor="end">RTL draft v1  •  TAGE not instantiated in archive</text>
+</svg>
